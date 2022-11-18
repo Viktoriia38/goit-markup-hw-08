@@ -1,0 +1,23 @@
+@mixin mq($type) {
+$mob: 480px;
+$tab: 768 px;
+$desc: 1200px;
+}
+
+// mobile
+@mixin screen and ($min-width: 1200px) {
+    padding-top:94px;
+    padding-bottom: 94px;
+} 
+
+// tab
+@mixin screen and ($min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+// desc
+@mixin screen and ($min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

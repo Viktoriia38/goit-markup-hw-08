@@ -1,0 +1,19 @@
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196f3;  
+    --contrast-color: #ffffff;
+    --grey-bg-color: #2F303A;
+}
+
+$accentButtonColor: #188CE8;
+
+$mainFontsFamily: Roboto, sans-serif;
+$logoFontsFamily:Raleway, cursive;
+
+$bodyFontsSize: 14px;
+$titleFontsSize: 36px;
+$subtitleFontsSize: 26px;
+$modalFontsSize: 16px;
+
+$gradientHero: linear-gradient(to top left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));

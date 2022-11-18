@@ -1,0 +1,124 @@
+.list.portfolio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.list.portfolio .item:not(:first-child) {
+    margin-left: 8px;
+}
+
+.type-button {
+    margin-bottom: 34px;
+    margin-top: 0;
+}
+
+.portfolio>.border {
+    border: 1px solid #EEEEEE;
+    width: 370px;
+}
+
+.list.model {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list.model .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: block;
+    line-height: 0;
+}
+
+.product-link:hover,
+.product-link:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.list.model .item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.list.model .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+
+.list.model .border {
+    border: 1px solid #EEEEEE;
+}
+
+.product {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-top: 20px;
+    padding-left: 24px;
+    margin-bottom: 0;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: box-shadow 250ms;
+}
+
+.product-type {
+    font-size: $modalFontsSize;
+    line-height: 1.87;
+    margin-top: 4px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ---------------------Позиціонування та перехід блоку Портфоліо*/
+
+.card-product {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-product-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    margin: 0;
+    right: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--contrast-color);
+    font-size: 18px;
+    line-height: 1.6;
+    align-items: center;
+    padding: 0 24px;
+    display: flex;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(101%);
+}
+
+.list.model .product-link:hover .card-product-text,
+.list.model .product-link:focus .card-product-text {
+    opacity: 1;
+    transform: translateY(0);
+}

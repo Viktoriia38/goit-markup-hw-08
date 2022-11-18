@@ -1,0 +1,41 @@
+body {
+    color: var(--title-text-color);
+    font-family: $mainFontsFamily;
+    font-size: $bodyFontsSize;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;    
+    }
+}
+ 
+.list {
+     list-style: none;
+     margin-top: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+ }
+
+.title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: $titleFontsSize;
+        margin-bottom: 50px;
+    }
+}

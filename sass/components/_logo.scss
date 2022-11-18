@@ -1,0 +1,52 @@
+.logo {
+    color: #000000;
+    text-decoration: none;
+    font-family: $logoFontsFamily;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    padding: 16px 0;;
+
+//  tablet
+    @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.4;
+    }
+        
+    //  desktop
+    @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+    }
+}
+
+.logo-web {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: $logoFontsFamily;font-weight: 700;
+        font-size: $subtitleFontsSize;
+        line-height: 1.2;
+    }
+    
+    .logo-bottom {
+        color: var(--contrast-color);
+        display: inline-block;
+        text-decoration: none;
+        font-family: $logoFontsFamily;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.19;
+        margin-bottom: 20px;
+
+        //  tablet
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            line-height: 1.4;
+        }
+    
+        //  desktop
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.2;
+        }
+    }

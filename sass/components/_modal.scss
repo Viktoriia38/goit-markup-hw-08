@@ -1,0 +1,237 @@
+.backdrop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    visibility: visible;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    transition-property: transform;
+    transform: translate(100%, 100%);
+    transform: translateY(100%);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 450px;
+    min-height: 609px;
+
+    background-color: var(--contrast-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    padding: 40px;
+
+    //  desktop
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+        min-height: 581px;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    display: flex;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    background-color: var(--contrast-color);
+    cursor: pointer;
+
+    transition: fill 250ms;
+
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+    }
+}
+
+.close-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 18px;
+    min-width: 18px;
+}
+
+.modal-title {
+    font-weight: 700;
+    color: var(--primary-text-color);
+    font-size: 20px;
+    line-height: 1.15;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.modal-list.list {
+    margin-bottom: 20px;
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1,17;
+    letter-spacing: 0.01em;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: $modalFontsSize;
+    outline: unset;
+    padding-left: 42px;
+
+    transition: border 250ms;
+
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+
+.modal-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.modal-item {
+    position: relative;
+}
+
+.modal-comment {
+    width: 100%;
+    height: 138px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    outline: transparent;
+    padding: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    display: block;
+}
+
+.modal-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.icon-modal {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+    fill: var(--primary-text-color);
+
+    transition: fill 250ms;
+}
+
+.modal-comment:focus {
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+
+.modal-input:focus+.icon-modal {
+    fill: var(--accent-color);
+}
+
+.privacy-rules {
+    color: var(--accent-color);
+    line-height: 1.71px;
+    margin-left: 4px;
+}
+
+input-check {
+    left: 23px;
+}
+
+.privacy {
+    margin-bottom: 30px;
+}
+
+.privacy-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+
+        @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71px;
+        }
+}
+
+.privacy-text::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px solid #000000;
+    margin-right: 7px;
+}
+
+.input-check:checked+.privacy-text::before {
+    background-color: var(--accent-color);
+    border: none;
+    background-image: url(../images/icon-check.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.modal-button {
+    min-width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-size: $modalFontsSize;
+    line-height: 1.88;
+    border-style: none;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: block;
+    margin: auto;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: $accentButtonColor;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
