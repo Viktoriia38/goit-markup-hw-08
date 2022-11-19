@@ -223,6 +223,7 @@ outline: none;
 // Function Open
 .menu-container.is-open {
     transform: translateX(0);
+    overflow-y: auto;
         //  tablet
 
         @media screen and (min-width: 768px) {
