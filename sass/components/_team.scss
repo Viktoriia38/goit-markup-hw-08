@@ -44,19 +44,8 @@
 
 .team_view {
     display: block;
-    min-width: 450px;
-    min-height: 460px;
-        //  tablet
-        @media screen and (min-width: 768px) {
-            min-width: 354px;
-            min-height:374px;
-        }
-        
-        //  desktop
-        @media screen and (min-width: 1200px) {
-            min-width: 270px;
-            min-height: 260px;
-        }
+    max-width: 100%;
+    height: auto;
 
 }
 
