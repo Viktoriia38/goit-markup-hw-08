@@ -1277,8 +1277,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .bottom .container {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1286,6 +1286,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .bottom .container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     text-align: start;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
