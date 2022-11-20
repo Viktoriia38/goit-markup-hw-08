@@ -1199,16 +1199,9 @@ body {
 .bottom {
   padding: 60px 0;
   background-color: var(--grey-bg-color);
-  background-position: center;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 @media screen and (min-width: 768px) {
   .bottom {
@@ -1223,6 +1216,7 @@ body {
 
 .mobile-bottom {
   text-align: center;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .mobile-bottom {
@@ -1278,12 +1272,29 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 70px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .bottom .container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bottom .container {
+    text-align: start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .social-footer {
+  margin: auto;
   text-align: center;
 }
 @media screen and (min-width: 768px) {

@@ -1,11 +1,7 @@
 .bottom {
     padding: 60px 0;
     background-color: var(--grey-bg-color);
-    background-position: center;
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 
 //  tablet
     @media screen and (min-width: 768px) {
@@ -20,6 +16,7 @@
 
 .mobile-bottom {
     text-align: center;
+    margin: auto;
 
 //  tablet
     @media screen and (min-width: 768px) {
@@ -72,11 +69,24 @@
 .bottom .container {
     display: flex;
     gap: 70px;
-    align-items: baseline;
+    flex-wrap: wrap;
+
+        //  tablet
+            @media screen and (min-width: 768px) {
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                }
+        
+            //  desktop
+            @media screen and (min-width: 1200px) {
+                text-align: start;
+                align-items: baseline;
+            }
 }
 
 .social-footer {
-    text-align: center;
+    margin: auto; 
+        text-align: center;
 
     //  tablet
     @media screen and (min-width: 768px) {
