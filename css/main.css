@@ -784,6 +784,7 @@ input-check {
     letter-spacing: 0.02em;
     padding: 32px 0;
     display: block;
+    font-size: 14px;
   }
 }
 .site-nav .link:hover, .site-nav .link:focus {
@@ -1302,6 +1303,7 @@ body {
 @media screen and (min-width: 768px) {
   .social-footer {
     text-align: center;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {

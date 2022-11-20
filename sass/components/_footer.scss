@@ -87,11 +87,12 @@
 
 .social-footer {
     margin: auto; 
-        text-align: center;
+    text-align: center;
 
     //  tablet
     @media screen and (min-width: 768px) {
         text-align: center;
+        margin: 0 auto;
     }
 
     //  desktop
