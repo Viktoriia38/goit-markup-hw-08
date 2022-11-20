@@ -166,12 +166,18 @@
     @media screen and (min-width: 480px) {
         width: 450px;
     }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+
     
         //  desktop
     @media screen and (min-width: 1200px) {
         display: inline-flex;
         width: 358px;
         gap: 12px;
+        margin-bottom: 20px;
     }
 }
 

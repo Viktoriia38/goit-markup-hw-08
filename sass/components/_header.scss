@@ -10,6 +10,7 @@
 
 .main-block {
     display: flex;
+    align-items: center;
 }
 
 .site-nav.list {
@@ -88,11 +89,10 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        margin-top: 21px;
-        margin-bottom: 21px;
         margin-left: auto;
         width: 138px;
         flex-wrap: wrap;
+        align-content: center;
         gap: 10px;
     }
 
@@ -103,6 +103,7 @@
         gap: 50px;
         width: auto;
         margin-left: auto;
+        padding: auto;
     }
 }
 
@@ -110,11 +111,8 @@
     color: var(--title-text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    display: flex;
-
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,7 +126,6 @@
     @media screen and (min-width: 768px) {
         display: flex;
         font-size: 12px;
-        line-height: 1.16;
     }
 
     //  desktop
@@ -140,6 +137,7 @@
         line-height: 1.14;
     }
 }
+
 
 .item-mail,
 .item-tel {
