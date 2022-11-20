@@ -282,7 +282,6 @@ outline: none;
 }
 
 // finish
-
 .site-nav .link {
 color: var(--primary-text-color);
 text-decoration: none;
@@ -292,7 +291,7 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 display: block;
 
-    
+
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -321,6 +320,7 @@ color: var(--accent-color);
 .mobile-menu .item:not(:last-child) {
     margin-bottom: 32px;
 }
+
 
 .mobile-menu .item-contact:not(:last-child) {
     margin-bottom: 32px;
